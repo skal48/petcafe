@@ -1,7 +1,7 @@
 package com.puppycafe.stamp.controller;
 
 import lombok.AllArgsConstructor;
-import com.puppycafe.stamp.model.Test;
+import com.puppycafe.stamp.entity.User;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -16,7 +16,7 @@ public class TestController {
     private final TestService testService;
 
     @GetMapping(value = "/test")
-    public List<Test> getUserList() {
+    public List<User> getUserList() {
         return testService.getUserList();
     }
 }
