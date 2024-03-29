@@ -26,10 +26,10 @@ function TestComponent() {
     return (
             <div>
                 {data ? data.map((datas)=>(
-                    <div key={datas.user_no}>
-                        <div>번호: {datas.user_no}</div>
-                        <div>타입: {datas.user_name}</div>
-                        <div>핸드폰: {datas.user_phone}</div>
+                    <div key={datas.userNo}>
+                        <div>번호: {datas.userNo}</div>
+                        <div>타입: {datas.userName}</div>
+                        <div>핸드폰: {datas.userPhone}</div>
 
                     </div>
                 )) : ''}
