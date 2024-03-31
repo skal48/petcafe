@@ -5,9 +5,9 @@ const Header = () => {
     return (
         <header className={styles.header}>
           <div className={styles.contents}>
-            <div> 
-              로고 넣기
-            </div>
+            <a href="/" className={styles.logo}>
+              쿠 펫
+            </a>
             <nav className={styles.navigation}>
               <ul>
                 <li>로그인</li>

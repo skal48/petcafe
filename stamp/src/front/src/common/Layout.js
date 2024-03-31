@@ -1,6 +1,4 @@
 import React from "react";
-import header from "./Header";
-import footer from "./Footer";
 import Header from "./Header";
 import Footer from "./Footer";
 
@@ -8,7 +6,7 @@ const Layout = (props) => {
     return (
         <div>
             <Header />
-              <main>
+              <main style={{height:1000}}>
                 {props.children}
               </main>
 
