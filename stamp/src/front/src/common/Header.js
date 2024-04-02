@@ -2,6 +2,7 @@ import React from "react";
 import styles from './Header.module.scss'
 import {Route,Routes, Link} from "react-router-dom";
 import Login from "../login/Login"
+import Coupon from "../coupon/Coupon"
 
 const Header = () => {
     return (
@@ -18,6 +19,7 @@ const Header = () => {
             </nav>
             <Routes>
               <Route path="/login" element={<Login />} />
+              <Route path="/coupon" element={<Coupon />} />
             </Routes>
           </div>
         </header>
