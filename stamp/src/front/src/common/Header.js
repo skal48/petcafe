@@ -1,8 +1,7 @@
 import React from "react";
 import styles from './Header.module.scss'
-import {Route,Routes, Link} from "react-router-dom";
-import Login from "../login/Login"
-import Coupon from "../coupon/Coupon"
+import {Link} from "react-router-dom";
+
 
 const Header = () => {
     return (
@@ -17,11 +16,8 @@ const Header = () => {
                 <li><Link to="/coupon">쿠폰</Link></li>
               </ul>
             </nav>
-            <Routes>
-              <Route path="/login" element={<Login />} />
-              <Route path="/coupon" element={<Coupon />} />
-            </Routes>
           </div>
+
         </header>
     )
 }

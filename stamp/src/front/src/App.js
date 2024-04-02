@@ -1,8 +1,9 @@
 import './App.css';
 import {useEffect, useState} from "react";
 import React from 'react';
-import Layout from "./common/Layout";
-import Home from "./home/Home"
+import Header from "./common/Header";
+import Footer from "./common/Footer";
+import {Outlet} from "react-router-dom";
 
 
 function App() {
@@ -17,15 +18,17 @@ function App() {
       })
   },[]);*/
   return (
-    <div className="App">
+    <div className={App}>
         {/*  <ul>
               {data.map((v,idx)=><li key={`${idx}-${v}`}>{v}</li>)}
           </ul>*/}
 
-        <Layout >
-        </Layout>
+      <Header />
+      <Outlet />
+      <Footer />
 
     </div>
+
   );
 }
 

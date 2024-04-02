@@ -3,14 +3,30 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter} from "react-router-dom";
+import {BrowserRouter, createBrowserRouter, RouterProvider} from "react-router-dom";
+import Login from "./login/Login";
+import Coupon from "./coupon/Coupon";
+import Home from "./home/Home";
 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+ /*   errorElement: <NotFound />,*/
+    children: [
+      { index: true, path: "/", element: <Home /> }, //index로 '/' 메인페이지 지정
+      { path: "/login", element: <Login /> },
+      {
+        path: "/coupon",
+        element: <Coupon />
+      },
+    ],
+  },
+]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-      <BrowserRouter>
-          <App />
-      </BrowserRouter>
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
