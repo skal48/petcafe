@@ -8,7 +8,7 @@ const Footer = () => {
               <a href="/" className={styles.footerLogo}>쿠 펫</a>
             </div>
             <div className={styles.made}>
-              made by sumin
+              Created by sumin
             </div>
         </footer>
     )

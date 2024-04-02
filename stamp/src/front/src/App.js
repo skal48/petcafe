@@ -2,6 +2,7 @@ import './App.css';
 import {useEffect, useState} from "react";
 import React from 'react';
 import Layout from "./common/Layout";
+import Home from "./home/Home"
 
 
 function App() {
@@ -23,10 +24,6 @@ function App() {
 
         <Layout >
         </Layout>
-
-
-
-
 
     </div>
   );
