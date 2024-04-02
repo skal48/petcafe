@@ -1,15 +1,13 @@
 * {
   text-decoration-line: none;
   list-style: none;
+  text-align: center;
 }
 @font-face {
   font-family: 'Cafe24Ohsquare';
   src: url("./font/Cafe24Ohsquare-v2.0.otf") format('truetype');
   font-weight: normal;
   font-style: normal;
-}
-.App {
-  text-align: center;
 }
 
 html {
