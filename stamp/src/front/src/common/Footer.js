@@ -4,8 +4,8 @@ import styles from './Footer.module.scss'
 const Footer = () => {
     return (
         <footer className={styles.footer}>
-            <div className={styles.footerLogo}>
-              쿠펫
+            <div>
+              <a href="/" className={styles.footerLogo}>쿠 펫</a>
             </div>
             <div className={styles.made}>
               made by sumin
