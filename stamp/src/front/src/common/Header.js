@@ -1,19 +1,24 @@
 import React from "react";
 import styles from './Header.module.scss'
+import {Route,Routes, Link} from "react-router-dom";
+import Login from "../login/Login"
 
 const Header = () => {
     return (
         <header className={styles.header}>
           <div className={styles.contents}>
-            <a href="/" className={styles.logo}>
+            <Link to ="/" className={styles.logo}>
               쿠 펫
-            </a>
+            </Link>
             <nav className={styles.navigation}>
               <ul>
-                <li>로그인</li>
-                <li>쿠폰</li>
+                <li><Link to="/login">로그인</Link></li>
+                <li><Link to="/coupon">쿠폰</Link></li>
               </ul>
             </nav>
+            <Routes>
+              <Route path="/login" element={<Login />} />
+            </Routes>
           </div>
         </header>
     )
