@@ -13,9 +13,6 @@ const Kakaomap = () =>{
             level={3}                                   // 지도 확대 레벨
         >
         </Map>
-        
-        
-        요를ㄹ레이
       </div>);
 }
 

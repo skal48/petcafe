@@ -1,12 +1,16 @@
 import React from "react";
 import Kakaomap from "./Kakaomap";
+import Layout from "../common/Layout";
 
 
 const Home = () => {
   return (
-      <div style={{height:1000}}>
+      <Layout>
+
+      <div>
         <Kakaomap />
       </div>
+      </Layout>
   )
 }
 

@@ -1,9 +1,8 @@
 import './App.css';
 import {useEffect, useState} from "react";
 import React from 'react';
-import Header from "./common/Header";
-import Footer from "./common/Footer";
 import {Outlet} from "react-router-dom";
+import Layout from "./common/Layout";
 
 
 function App() {
@@ -18,14 +17,11 @@ function App() {
       })
   },[]);*/
   return (
-    <div className={App}>
+    <div className="App">
         {/*  <ul>
               {data.map((v,idx)=><li key={`${idx}-${v}`}>{v}</li>)}
           </ul>*/}
-
-      <Header />
       <Outlet />
-      <Footer />
 
     </div>
 
