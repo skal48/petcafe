@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
 
-@Table(name = "businiss_hour", schema = "pet_db")
+@Table(name = "business_hour", schema = "pet_db")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
