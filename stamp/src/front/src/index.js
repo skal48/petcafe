@@ -7,6 +7,8 @@ import { createBrowserRouter, RouterProvider} from "react-router-dom";
 import Login from "./login/Login";
 import Coupon from "./coupon/Coupon";
 import Home from "./home/Home";
+import JoinUser from "./login/JoinUser";
+import Layout from "./common/Layout";
 
 const router = createBrowserRouter([
   {
@@ -16,10 +18,8 @@ const router = createBrowserRouter([
     children: [
       { index: true, path: "/", element: <Home /> }, //index로 '/' 메인페이지 지정
       { path: "/login", element: <Login /> },
-      {
-        path: "/coupon",
-        element: <Coupon />
-      },
+      { path: "/coupon", element: <Coupon /> },
+      { path: "/signUp", element: <JoinUser /> },
     ],
   },
 ]);
