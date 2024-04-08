@@ -147,6 +147,11 @@ const JoinUser = () =>{
             name="agree"
           />
         </div>
+        <div>
+          <button
+              onClick={processSignup}
+          >회원 가입</button>
+        </div>
 
       </div>
 
