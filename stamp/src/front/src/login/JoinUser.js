@@ -31,6 +31,7 @@ const JoinUser = () =>{
         userPhone: phone,
         nickName: nickname,
         userType: userType,
+        businessRegistration: registration,
         agree: agree
       }),
     })
@@ -57,17 +58,100 @@ const JoinUser = () =>{
   return (
       <div>
         <h1>회원가입</h1>
-        <input
-            type="email"
-            placeholder="이메일을 입력해주세요"
-            value={email}
-            name="email"
-        />
+        <div>
+          <input
+              type="email"
+              placeholder="이메일을 입력해주세요"
+              value={email}
+              name="email"
+          />
+        </div>
+        <div>
+          <input
+              type="text"
+              placeholder="이름"
+              value={name}
+              name="userName"
+          />
+        </div>
+        <div>
+          <input
+            type="password"
+            placeholder="비밀번호"
+            value={password}
+            name="password"
 
+          />
+        </div>
+        <div>
+          <input
+              type="password"
+              placeholder="비밀번호 한번더 "
+              value={password}
+          />
+        </div>
+        <div>
+          <input
+            type="text"
+            placeholder="핸드폰번호(-)없이 입력해주세요"
+            value={phone}
+            name="userPhone"
+            />
+        </div>
+        <div>
+          <input
+            type="text"
+            placeholder="닉네임"
+            value={nickname}
+            name="nickname"
+          />
+        </div>
+        <div>
+          <label htmlFor="common">일반회원</label>
+          <input
+            type="radio"
+            id="common"
+            value= "1"
+            name="userType"
+          />
+          <label htmlFor="business">사업자</label>
+          <input
+            type="radio"
+            id="business"
+            value= "2"
+            name="userType"
+          />
+        </div>
+        <div>
+          <input
+            type="text"
+            placeholder="사업자 번호"
+            value={registration}
+            name="businessRegistration"
+          />
+        </div>
+        <div>
+          <h3>약관 동의</h3>
+          <label htmlFor="disagree">비동의</label>
+          <input
+            type="radio"
+            id="disagree"
+            value="1"
+            name="agree"
+          />
+          <label htmlFor="agree">동의</label>
+          <input
+            type="radio"
+            id="agree"
+            value="2"
+            name="agree"
+          />
+        </div>
 
       </div>
 
-  )
+  );
+
 }
 
 export default JoinUser
