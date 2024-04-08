@@ -36,6 +36,9 @@ public class User {
     @Column(name = "user_type", nullable = false)
     private Integer userType; // 1: 일반 2: 사업자
 
+    @Column(name = "token", nullable = false)
+    private String token;
+
     @Column(name = "business_registration", unique = true)
     private String businessRegistration; //사업자 등록번호
 
